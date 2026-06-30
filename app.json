@@ -20,7 +20,11 @@
     },
     "web": {
       "favicon": "./assets/logo.png",
-      "bundler": "metro"
+      "bundler": "metro",
+      "name": "Flortek Industries PVT LTD",
+      "shortName": "Flortek",
+      "themeColor": "#0B5ED7",
+      "backgroundColor": "#FFFFFF"
     },
     "plugins": [
       "expo-router",

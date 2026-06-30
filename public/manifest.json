@@ -3,19 +3,19 @@
   "name": "Flortek Industries PVT LTD",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "/icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "/icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": "/",
   "background_color": "#FFFFFF",
-  "theme_color": "#1A237E",
+  "theme_color": "#0B5ED7",
   "display": "standalone",
   "orientation": "portrait"
 }

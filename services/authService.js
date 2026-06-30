@@ -81,11 +81,14 @@ export const signIn = async (
 };
 
 export const signOut = async () => {
-  const { error } =
-    await supabase.auth.signOut();
-
-  if (error) throw error;
-
+  try {
+    const { error } = await supabase.auth.signOut();
+    if (error) {
+      console.warn('Supabase signOut returned error (ignoring to allow local signout):', error);
+    }
+  } catch (err) {
+    console.error('Supabase signOut exception (ignoring to allow local signout):', err);
+  }
   return true;
 };
 

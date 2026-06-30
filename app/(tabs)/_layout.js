@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Tabs, router } from 'expo-router';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { getCurrentUser, getUserProfile, checkEmailVerificationStatus, signOut } from '../../services/authService';
-import { ActivityIndicator, View } from 'react-native';
+import { ActivityIndicator, View, Platform } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import useCartStore from '../../store/cartStore';
 
@@ -77,8 +77,8 @@ export default function TabsLayout() {
           backgroundColor: '#ffffff',
           borderTopWidth: 1,
           borderTopColor: '#ECEFF1',
-          height: 60 + insets.bottom,
-          paddingBottom: insets.bottom > 0 ? insets.bottom : 8,
+          height: Platform.OS === 'ios' ? 64 + insets.bottom : 68,
+          paddingBottom: Platform.OS === 'ios' ? (insets.bottom > 0 ? insets.bottom : 8) : 10,
           paddingTop: 8,
           elevation: 8,
           shadowColor: '#000',

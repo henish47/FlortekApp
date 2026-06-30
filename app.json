@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Flortek Industries PVT LTD",
+    "slug": "flortek-industries",
+    "scheme": "flortek",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+   
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.anonymous.flortekorderapp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#E6F4FE"
+      }
+    },
+    "web": {
+      "favicon": "./assets/logo.png",
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sharing",
+      "@react-native-community/datetimepicker",
+      "expo-web-browser",
+      "expo-font"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "4fe0b615-8c51-4eb8-ae1b-294fd1ff4df6"
+      }
+    }
+  }
+}

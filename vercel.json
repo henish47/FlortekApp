@@ -7,7 +7,7 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/((?!_expo|assets|icons|favicon.ico|manifest.json|sw.js).*)" ,
+      "source": "/:path*",
       "destination": "/index.html"
     }
   ]
